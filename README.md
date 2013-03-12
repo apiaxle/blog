@@ -1,4 +1,1 @@
-blog
-====
-
-Blog for ApiAxle
+Website for ApiAxle: http://apiaxle.com

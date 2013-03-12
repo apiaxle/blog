@@ -1,0 +1,18 @@
+---
+layout:   default
+title:    Home
+---
+
+<section id="content" class="clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="span8 offset2">
+        {% for post in site.posts %}
+          <h1>{{ post.title }}</h1>
+          <small>{{ post.date | date:"%Y-%m-%d" }} - <a href="{{ post.url }}">permalink</a></small>
+          <div>{{ post.content }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
