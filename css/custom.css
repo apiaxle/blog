@@ -68,3 +68,7 @@
   color:     #D95B44;
 }
 
+#archive-list .description {
+  font-size: small;
+  border-top: 1px solid #ddd;
+}

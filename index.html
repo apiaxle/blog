@@ -17,13 +17,18 @@ title:    Home
 
           <hr/>
           <div class="spacer-20px"></div>
+          <p><i>{{ post.description }}<i></p>
           <div>{{ post.content }}</div>
         {% endfor %}
       </div>
-      <div class="span4">
-        <ul>
+      <div id="archive-list" class="span4">
+        <h4>Archives</h4>
         {% for post in site.posts %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date:"%Y-%m-%d" }}
+          <div>
+            <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date:"%Y-%m-%d" }}
+            <div class="description">{{ post.description }}</div>
+          </div>
+          <hr />
         {% endfor %}
       </div>
     </div>
