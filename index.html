@@ -23,7 +23,7 @@ title:    Home
       </div>
       <div id="archive-list" class="span4">
         <h4>Archives</h4>
-        {% for post in site.posts %}
+        {% for post in site.posts reversed offset:1 %}
           <div>
             <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date:"%Y-%m-%d" }}
             <div class="description">{{ post.description }}</div>
