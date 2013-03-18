@@ -37,6 +37,16 @@ to keep the http overhead to a minimum and you don't have to
 potentially bust your HTTP cache by serving up lots of representations
 of overlapping data.
 
+On the other hand if a client will benefit from resolution in the call
+then why not make it optional with a query parameter such as
+`resolve={true|false}`? It's
+[exactly how ApiAxle does things](http://apiaxle.com/api.html#toc19)
+in its API.
+
+On top of these things you have to take into account sorting, ranges
+and the fact that doing any sort of resolution will make the size of
+the payload bigger.
+
 ### URL/URI structure
 
 I bet this is the bit you were searching for when you came here, in
