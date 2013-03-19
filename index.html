@@ -10,7 +10,7 @@ title:    Home
 
   <div class="container">
     <div class="row">
-      <div class="span8">
+      <div class="span7">
         {% for post in site.posts reversed %}
           {% if post.previous %}
           {% else %}
@@ -24,17 +24,24 @@ title:    Home
           {% endif %}
         {% endfor %}
       </div>
-      <div id="archive-list" class="span4">
-        <h4>Archives</h4>
-        {% for post in site.posts reversed %}
-          <div>
-            <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date:"%Y-%m-%d" }}
-            {% if ! {{ forloop.first }} %}
-              <div class="description">{{ post.description }}</div>
-            {% endif %}
-          </div>
-          <hr />
-        {% endfor %}
+      <div class="well span4">
+        <div>
+          <h4>What is ApiAxle?</h4>
+          <p>ApiAxle is a proxy that sits on your network, in front of your API(s) and manages things that you shouldn't have to like rate limiting, authentication and caching. It's fast, open and easy to configure. <a href="http://apiaxle.com">Read more</a></p>
+        </div>
+
+        <div id="archive-list">
+          <h4>Archives</h4>
+          {% for post in site.posts reversed %}
+            <div>
+              <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date:"%Y-%m-%d" }}
+              {% if ! {{ forloop.first }} %}
+                <div class="description">{{ post.description }}</div>
+              {% endif %}
+            </div>
+            <hr />
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
