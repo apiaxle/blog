@@ -3,10 +3,12 @@ layout: post
 title: Requesting multiple resources with one request
 author: Phil Jackson
 description: |
-  It's a common problem when designing an API but there's seemingly no
-  one way to return multiple resouces within a single request that
-  fits in with peoples perception of an idealistic REST
+
+  It's a common problem when designing an API but there's no
+  definitive way to return multiple resouces within a single request
+  that fits in with peoples perception of an idealistic REST
   implementation. Here I discuss some options.
+
 ---
 
 Often when writing an API someone will tell you that they need to pull
@@ -50,10 +52,10 @@ the payload bigger.
 ### URL/URI structure
 
 I bet this is the bit you were searching for when you came here, in
-actual fact it's the might be the easiest bit to answer. A URI is
-simply a unique identifier - there's not really a URI which is anymore
-RESTful than another, though, of course some URIs will make more sense
-than others. You have plenty of options for representing lists on a
+actual fact it might be the easiest bit to answer. A URI is simply a
+unique identifier - there's not really a URI which is anymore RESTful
+than another, of course some URIs will make more sense than
+others. You have plenty of options for representing lists on a
 url. I've seen any of the below suggested:
 
     HTTP://example.com/v1/vehicles/manufacturer/ford,lamborghini
