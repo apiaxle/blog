@@ -3,12 +3,10 @@ layout: post
 title: Requesting multiple resources with one request
 author: Phil Jackson
 description: |
-
   It's a common problem when designing an API but there's no
   definitive way to return multiple resouces within a single request
   that fits in with peoples perception of an idealistic REST
   implementation. Here I discuss some options.
-
 ---
 
 Often when writing an API someone will tell you that they need to pull
