@@ -42,8 +42,8 @@
         <h1>{{ page.title }}</h1>
         <div><small>{{ page.author }} - {{ page.date | date:"%Y-%m-%d" }}</small></div>
         <hr/>
-        {% if page.description && ( page.description != page.title ) %}
-        <i>{{ page.description }}</i>
+        {% if page.description %}
+        {{ page.description }}
         <hr/>
         {% endif %}
 
