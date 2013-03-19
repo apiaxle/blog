@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Requesting multiple resources with one request
+title: Fetching multiple resources with one request
 author: Phil Jackson
 description: |
   It's a common problem when designing an API but there's no
