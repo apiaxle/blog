@@ -6,41 +6,32 @@ title:    Home
 <section id="content" class="clearfix">
   <div class="container">
 
-  <div class="spacer-40px"></div>
+    <div class="spacer-40px"></div>
 
-  <div class="container">
-    <div class="row">
-      <div class="span7">
-        {% for post in site.posts reversed %}
-          {% if post.previous %}
-          {% else %}
-            <h1>{{ post.title }}</h1>
-            <small>{{ post.date | date:"%Y-%m-%d" }} - {{ post.author }}</small>
-
-            <hr/>
-            <div class="spacer-20px"></div>
-            <p><i>{{ post.description }}<i></p>
-            <div>{{ post.content }}</div>
-          {% endif %}
-        {% endfor %}
-      </div>
-      <div class="well span4">
-        <div>
-          <h4>What is ApiAxle?</h4>
-          <p>ApiAxle is a proxy that sits on your network, in front of your API(s) and manages things that you shouldn't have to like rate limiting, authentication and caching. It's fast, open and easy to configure. <a href="http://apiaxle.com">Read more</a></p>
-        </div>
-
-        <div id="archive-list">
-          <h4>Archives</h4>
+    <div class="container">
+      <div class="row">
+        <div class="span7">
           {% for post in site.posts reversed %}
-            <div>
-              <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date:"%Y-%m-%d" }}
-              {% if ! {{ forloop.first }} %}
-                <div class="description">{{ post.description }}</div>
-              {% endif %}
-            </div>
-            <hr />
-          {% endfor %}
+          <div>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <div><small>{{ post.author }} - {{ post.date | date:"%Y-%m-%d" }}</small></div>
+
+            <div class="description">{{ post.description }}</div>
+            <div><a href="{{ post.url }}">Read more</a></div>
+          </div>
+          <hr />
+        </div>
+        {% endfor %}
+
+        <div class="well span4">
+          <div>
+            <h4>What is ApiAxle?</h4>
+            <p>ApiAxle is a proxy that sits on your network, in front of
+              your API(s) and manages things that you shouldn't have to
+              like rate limiting, authentication and caching. It's fast,
+              open and easy to
+              configure. <a href="http://apiaxle.com">Read more</a></p>
+          </div>
         </div>
       </div>
     </div>
