@@ -80,3 +80,10 @@ return a `200` and an empty list when there are no matching
 manufacturers in your list then the query parameter method feels more
 correct. If you intend to return a `404` and perhaps an error message
 then the first feels more correct. Again, only an opinion.
+
+### You're not very restricted
+
+So, to conclude. You're not very restricted when it comes to making a
+choice and still being able to describe your service as RESTful. Make
+a decision based on what will be useful for your clients and scalable
+at your end.
