@@ -4,69 +4,87 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html class="not-ie" lang="en">
-<!--<![endif]-->
-<head>
-{% include meta.html %}
+  <!--<![endif]-->
+  <head>
+    {% include meta.html %}
 
-<!--Fav and touch icons-->
-<link rel="shortcut icon" href="/img/icons/favicon.ico">
-<link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png">
+    <!--Fav and touch icons-->
+    <link rel="shortcut icon" href="/img/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png">
 
-<!--google web font-->
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+    <!--google web font-->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
 
-<!--style sheet-->
-<link rel="stylesheet" media="screen" href="/css/bootstrap.css"/>
-<link rel="stylesheet" media="screen" href="/css/bootstrap-responsive.css"/>
-<link rel="stylesheet" media="screen" href="/css/style.css"/>
-<link rel="stylesheet" media="screen" href="/css/custom.css"/>
-<link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <!--style sheet-->
+    <link rel="stylesheet" media="screen" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" media="screen" href="/css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" media="screen" href="/css/style.css"/>
+    <link rel="stylesheet" media="screen" href="/css/custom.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
 
-<!--jquery libraries / others are at the bottom-->
-<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
-<script src="/js/modernizr.js" type="text/javascript"></script>
+    <!--jquery libraries / others are at the bottom-->
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script src="/js/modernizr.js" type="text/javascript"></script>
 
-{% include ga.html %}
+    {% include ga.html %}
 
-</head>
-<body>
+  </head>
+  <body>
 
-{% include header.html %}
+    {% include header.html %}
 
-<section id="content" class="clearfix">
-  <div class="container">
-    <div class="row">
-      <div class="span8 offset2">
-        <h1>{{ page.title }}</h1>
-        <div><small>{{ page.author }} - {{ page.date | date:"%Y-%m-%d" }}</small></div>
-        <hr/>
-        {% if page.description %}
-        {{ page.description }}
-        <hr/>
-        {% endif %}
+    <section id="content" class="clearfix">
+    <div class="spacer-40px"></div>
 
-        <div>{{ content }}</div>
-        <div>
-          <div class="addthis_toolbox addthis_default_style ">
-            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-            <a class="addthis_button_tweet"></a>
-            <a class="addthis_counter addthis_pill_style"></a>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="span7">
+            <h1>{{ page.title }}</h1>
+            <div><small>{{ page.author }} - {{ page.date | date:"%Y-%m-%d" }}</small></div>
+            <hr/>
+            {% if page.description %}
+            {{ page.description }}
+            <hr/>
+            {% endif %}
+
+            <div>{{ content }}</div>
+            <div>
+              <div class="addthis_toolbox addthis_default_style ">
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                <a class="addthis_button_tweet"></a>
+                <a class="addthis_counter addthis_pill_style"></a>
+              </div>
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51484de44e06db3f"></script>
+            </div>
           </div>
-          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51484de44e06db3f"></script>
-      </div>
-    </div>
-  </div>
-</section>
 
-{% include footer.html %}
+            <div class="well span4">
+              <div>
+                <h4>What is ApiAxle?</h4>
+                <p>ApiAxle is a proxy that sits on your network, in front
+                  of your API(s) and manages things that you shouldn't
+                  have to like rate limiting, authentication and
+                  caching. It's fast, open and easy to
+                  configure. <a href="http://apiaxle.com/docs/why-use-apiaxle/">Read
+                    more</a></p>
+              </div>
+            </div>
 
-<!--other jqueries required-->
-<script src="/js/bootstrap.js" type="text/javascript" ></script>
-<script src="/js/ddsmoothmenu.js" type="text/javascript" ></script>
-<script src="/js/twitter.js" type="text/javascript" ></script>
-<script src="/js/jquery.easing.1.3.js" type="text/javascript" ></script>
-<script src="/js/custom.js" type="text/javascript" ></script>
-</body>
+          </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <!--other jqueries required-->
+    <script src="/js/bootstrap.js" type="text/javascript" ></script>
+    <script src="/js/ddsmoothmenu.js" type="text/javascript" ></script>
+    <script src="/js/twitter.js" type="text/javascript" ></script>
+    <script src="/js/jquery.easing.1.3.js" type="text/javascript" ></script>
+    <script src="/js/custom.js" type="text/javascript" ></script>
+  </body>
 </html>
