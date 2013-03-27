@@ -11,7 +11,7 @@ title:    Home
     <div class="container">
       <div class="row">
         <div class="span7">
-          {% for post in site.posts reversed %}
+          {% for post in site.posts %}
           <div>
             <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
             <div><small>{{ post.author }} - {{ post.date | date:"%Y-%m-%d" }}</small></div>
@@ -20,8 +20,8 @@ title:    Home
             <div><a href="{{ post.url }}">Read more</a></div>
           </div>
           <hr />
+          {% endfor %}
         </div>
-        {% endfor %}
 
         <div class="well span4">
           <div>
