@@ -44,7 +44,14 @@
           <div class="span8 offset2">
             <h1>{{ page.title }}</h1>
             <div><small>{{ page.author }} - {{ page.date | date:"%Y-%m-%d" }}</small></div>
-            <hr/>
+            <div class="well">
+              <a href="http://apiaxle.com">ApiAxle</a> is a proxy that
+              sits on your network, in front of your API(s) and
+              manages things that you shouldn't have to like rate
+              limiting, authentication and caching. It's fast, open
+              and easy to configure. <a href="http://apiaxle.com">Grab
+              it and try it out.</a>
+            </div>
             {% if page.description %}
             {{ page.description }}
             <hr/>
