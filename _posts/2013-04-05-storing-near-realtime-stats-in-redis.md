@@ -8,11 +8,10 @@ description: |
 ---
 
 This was developed as part of a recent rethink of how the popular API
-proxy [ApiAxle](http://apiaxle.com) handles it's statistical data.
-
-__Disclaimer__ This is certainly not the only way to tackle this
-problem and may not be the best, simply the one that worked for this
-developer on this project.
+proxy [ApiAxle](http://apiaxle.com) handles it's statistical data so
+it's quite specific to the associated domain. This is certainly not
+the only way to tackle this problem and may not be the best, simply
+the one that worked for this developer on this project.
 
 ## Requirements
 
