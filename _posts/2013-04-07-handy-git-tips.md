@@ -24,9 +24,9 @@ careful. `.gitignore` won't do the trick because that's checkin too so
 you risk someone forgetting about their valid edits of the file
 later. Here's a trick instead:
 
-    assume = update-index --assume-unchanged
+    assume   = update-index --assume-unchanged
     unassume = update-index --no-assume-unchanged
-    assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+    assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
 
 The flow being:
 
@@ -53,8 +53,12 @@ wrath of the CTO for now.
       # modified passwords.php
       # modified lib/user.php
 
-## 
+## Merging theirs, ours, anyone's
 
-  ours = "!f() { git co --ours $@ && git add $@; }; f"
-  theirs = "!f() { git co --theirs $@ && git add $@; }; f"
-  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+Often during a merge you know you want to take a file from one side
+wholesale. The following aliases expose the `ours` and `theirs`
+commands which will let you pick a file(s) from the current branch or
+the merged branch respectively:
+
+    ours   = "!f() { git commit --ours $@ && git add $@; }; f"
+    theirs = "!f() { git commit --theirs $@ && git add $@; }; f"
