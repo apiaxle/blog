@@ -129,3 +129,5 @@ strict testers then running the tests before a commit to
 post-merge. Also, running your linter and having it fail on errors
 might stop you checking in code which makes your co-workers gradually
 want to harm you.
+
+[Hacker News comments](https://news.ycombinator.com/item?id=5511498)
