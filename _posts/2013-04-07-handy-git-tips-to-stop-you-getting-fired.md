@@ -120,7 +120,7 @@ With patience becomes:
      }
 
 Same end result but much easier to read. You can invoke the algorithm
-when using `diff` with the `--patience` flag.
+when using `git diff` with the `--patience` flag.
 
 ## Get everything you can into git hooks
 
