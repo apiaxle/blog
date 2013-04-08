@@ -20,9 +20,8 @@ php developers commit configuration files and things that are used in
 production where they shouldn't be.
 
 Say you want to edit `passwords.php` and for god's sake not check it
-in to `develop`. `.gitignore` won't do the trick because that's
-committed too, so then you risk someone forgetting about their valid
-edits of the file later. Here's a trick instead:
+in to `develop`. `.gitignore` won't do the trick because the password
+file is tracked. Here are some aliases to help in this situation:
 
     assume   = update-index --assume-unchanged
     unassume = update-index --no-assume-unchanged
@@ -61,6 +60,10 @@ quite fit what you've done into a commit but daren't stray too far
 from now without a backup.
 
     snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+
+Running this:
+
+    $ git snapshot
 
 Creates this stash:
 
@@ -123,7 +126,6 @@ Same end result but much easier to read. You can invoke the algorithm
 when using `git diff` with the `--patience` flag or with `-s patience`
 when using `git pull` or `git merge`. Again, good when dealing with
 large XML documents with many changes.
-
 
 ## Get everything you can into git hooks
 
