@@ -64,8 +64,8 @@ from now without a backup.
 
 Creates this stash:
 
-    stash@{0}: On gh-pages: snapshot: Mon Apr 8 12:34:22 BST 2013
-    
+    stash@{0}: On feature/handy-git-tricks: snapshot: Mon Apr 8 12:39:06 BST 2013
+
 And seemingly no changes to your working tree.
 
 ## Easy merging = fewer mistakes
