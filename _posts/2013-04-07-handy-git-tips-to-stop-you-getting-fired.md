@@ -83,6 +83,9 @@ the merged branch respectively:
     ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 
+The function is there as hack to get `$@` doing what you would expect
+it to as a shell user.
+
 ### Comparing large chunks of text
 
 Using the patience diff algorithm to compare large swathes of
