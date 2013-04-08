@@ -128,7 +128,11 @@ With patience becomes:
 Same end result but much easier to read. You can invoke the algorithm
 when using `git diff` with the `--patience` flag or with `-s patience`
 when using `git pull` or `git merge`. Again, good when dealing with
-large XML documents with many changes.
+large XML documents with many changes. As Steve points out in the
+comments below you can set patience as your default diff algorithm by
+doing this:
+
+    $ git config --global diff.algorithm patience
 
 ## Get everything you can into git hooks
 
