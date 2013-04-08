@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Storing Time Series Statistics in Redis 
+title: Storing time series statistics in Redis
 author: Stuart Quin
 description: |
   The following is the tale describing the creation of a flexible
