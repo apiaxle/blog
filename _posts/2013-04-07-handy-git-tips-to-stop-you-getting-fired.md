@@ -4,8 +4,9 @@ title: Handy Git tips to stop you getting fired
 author: Phil Jackson
 description: |
 
-  Below I share some git aliases and tips for working with any sized
-  repos.
+  Below are some tips which might just stop you making that one
+  horrible mistake that makes your CTO wonder if your probationary
+  period is over.
 
 ---
 
@@ -18,11 +19,9 @@ in the real world sometimes php developers commit configuration files
 and things that are used in production where they shouldn't be.
 
 Say you want to edit `passwords.php` and for god's sake not check it
-in to `develop` since you got that horrible telling-off for running
-tests over the production database, you need to be really
-careful. `.gitignore` won't do the trick because that's committed too,
-so then you risk someone forgetting about their valid edits of the
-file later. Here's a trick instead:
+in to `develop`. `.gitignore` won't do the trick because that's
+committed too, so then you risk someone forgetting about their valid
+edits of the file later. Here's a trick instead:
 
     assume   = update-index --assume-unchanged
     unassume = update-index --no-assume-unchanged
@@ -45,7 +44,7 @@ The flow being:
       passwords.php
 
 No chance of checking in `passwords.php` now. You're safe from the
-wrath of the CTO for a bit.
+wrath of HR for a bit.
 
     $ git unassume passwords.php
     $ git status
@@ -53,7 +52,9 @@ wrath of the CTO for a bit.
       # modified passwords.php
       # modified lib/user.php
 
-## Merging theirs, ours, anyone's
+## Easy merging = fewer mistakes
+
+### Them and us
 
 Often during a merge you know you want to take a file from one side
 wholesale. The following aliases expose the `ours` and `theirs`
@@ -62,3 +63,16 @@ the merged branch respectively:
 
     ours   = "!f() { git commit --ours $@ && git add $@; }; f"
     theirs = "!f() { git commit --theirs $@ && git add $@; }; f"
+
+### Comparing large chunks of text
+
+Using the patience diff algorithm to compare large swathes of text
+often produces a much more readable diff that will more easily help
+you catch bad grammar or typos. The description of the algorithm by
+the author is:
+
+*Find all lines which occur exactly once on both sides, then do
+longest common subsequence on those lines, matching them up.*
+
+Here's a quick example of it helping:
+
