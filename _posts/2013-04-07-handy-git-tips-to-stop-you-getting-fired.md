@@ -119,7 +119,8 @@ With patience becomes:
          something += 2
      }
 
-Same end result but much easier to read.
+Same end result but much easier to read. You can invoke the algorithm
+when using `diff` with the `--patience` flag.
 
 ## Get everything you can into git hooks
 
