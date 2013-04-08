@@ -77,8 +77,8 @@ wholesale. The following aliases expose the `ours` and `theirs`
 commands which will let you pick a file(s) from the current branch or
 the merged branch respectively:
 
-    ours   = "!f() { git commit --ours $@ && git add $@; }; f"
-    theirs = "!f() { git commit --theirs $@ && git add $@; }; f"
+    ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
+    theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 
 ### Comparing large chunks of text
 
