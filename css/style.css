@@ -731,7 +731,7 @@ label {
 	height: auto;
 }
 input[type="text"], input[type="email"], select, textarea {
-	width: 66% !important;
+	width: 86% !important;
 	height: 30px;
 	padding: 5px;
 	margin: 0;
