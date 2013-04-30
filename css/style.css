@@ -1367,3 +1367,9 @@ left: 0;
 #toc .toc-active {
     background: #fff;
 }
+
+#post img {
+  margin: 15px;
+  padding:5px;
+  border: 1px solid #aaa;
+}

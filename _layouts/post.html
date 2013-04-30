@@ -41,25 +41,16 @@
       <div class="container">
         <div class="row">
 
-          <div class="span10 offset1">
+          <div class="span7">
             <h1>{{ page.title }}</h1>
             <div><small>{{ page.author }} - {{ page.date | date:"%Y-%m-%d" }}</small></div>
             <div class="spacer-20px"></div>
-
-            <div class="well">
-              <a href="http://apiaxle.com">ApiAxle</a> is a proxy that
-              sits on your network, in front of your API(s) and
-              manages things that you shouldn't have to like rate
-              limiting, authentication and caching. It's fast, open
-              and easy to configure. <a href="http://apiaxle.com">Grab
-              it and try it out.</a>
-            </div>
 
             {% if page.description %}
             <p>{{ page.description }}</p>
             {% endif %}
 
-            <div>{{ content }}</div>
+            <div id="post">{{ content }}</div>
             <div class="spacer-20px"></div>
             <div class="well">
               <!-- AddThis Button BEGIN -->
@@ -89,8 +80,30 @@
             </script>
             <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
+          </div>
+          <div class="well span4">
+            <h4>Signup for the newsletter</h4>
+            <!-- Begin MailChimp Signup Form -->
+            <p id="mc_embed_signup">
+              <form action="http://apiaxle.us6.list-manage.com/subscribe/post?u=690f13d9893fe9e788eed938d&amp;id=14e40b17a3"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    class="validate"
+                    target="_blank" novalidate>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+              </form>
+            </p>
+            <hr/>
+            <p>
+              <h4>What is ApiAxle?</h4>
+            <p>ApiAxle is a proxy that sits on your network, in front
+              of your API(s) and manages things that you shouldn't
+              have to like rate limiting, authentication and
+              caching. It's fast, open and easy to
+              configure. <a href="http://apiaxle.com/docs/why-use-apiaxle/">Read
+                more</a></p>
+            </p>
           </div>
         </div>
     </section>
