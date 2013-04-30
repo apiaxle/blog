@@ -8,7 +8,7 @@ description: |
   excitement will comes established companies wanting to get their
   slice of the pie and experimenting with presenting their data though
   a programmable interface. How do you go about designing one
-  considering whilst considering current architecture?
+  considering current architecture?
 
 ---
 
@@ -33,7 +33,7 @@ the fact that your particular use-case isn't necessarily the best use
 of your data.
 
 Take Google Maps, reasonably early on the service was reverse
-engineered and people used the maps tiles for some great
+engineered and people used the technology for some great
 mashups. Rather than lock down their system further, Google liked what
 they saw, recognised the potential value, and subsequently became more
 open by releasing a public interface. People were using the API in
@@ -44,8 +44,3 @@ people could innovate beyond what Google themselves had already
 achieved. It paid off too, they have a massive, profit generating,
 customer base consuming and presenting the data.
 
-Going back to the original point, building an API with an existing
-application. The first thing to do is go out and talk to your existing
-customers. Ask them how an API might complement your current offering
-and how it might help them grow their business. Describe to them a
-scenario which might 
