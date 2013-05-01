@@ -49,9 +49,10 @@ achieved. It paid off too, they have a massive, profit generating
 customer base consuming and presenting the data.
 
 To summarise, the best way to design an API which is presenting your
-company's data might not be to represent your current products with a
-REST interface, but rather to design the API from scratch, keeping it
-as generic as possible. If you can rebuild the backend of your systems
-to use it then all the better. Once you've built the generic
-functionality you can better gauge what aggregations, endpoints and
-data can be exposed when customers are feeding back.
+company's data might not be to represent your current data
+aggregations with a REST interface, but rather to design the data from
+scratch, keeping it as generic as possible. If you can rebuild the
+backend of your systems to use it then all the better. Once you've
+built the generic functionality you can better gauge what
+aggregations, endpoints and data can be exposed when customers are
+feeding back.
