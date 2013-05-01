@@ -27,8 +27,15 @@
     color: #646464;
 }
 
+.brand {
+  padding-left: 60px;
+}
 .logo {
   font-size: 1.0em;
+  background: url(../img/logo-48.png);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  padding-top: 18px;
 }
 
 .logo a{
