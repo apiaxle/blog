@@ -14,10 +14,13 @@ description: |
 
 If you were building a large system now, it might seem contrary to
 build a service which relies on a data source without an abstraction
-<img src="/img/dog_food_treats.jpg" style="float:right;" /> in the
-form of an API. How, if an application has been servicing clients for
-years and a decision is made to release an API, do you design it? What
-do you base requirements on? Your current interface?
+<img src="/img/dog_food_treats.jpg"
+     title="Cute puppy should garner some Reddit attention"
+     alt="Puppy and dogfood"
+     style="float:right;" />
+in the form of an API. How, if an application has been servicing
+clients for years and a decision is made to release an API, do you
+design it? What do you base requirements on? Your current interface?
 
 No. Well, probably not. One thing you can be pretty certain of is that
 the way developers want to interact with your API won't be the same
@@ -47,8 +50,8 @@ customer base consuming and presenting the data.
 
 To summarise, the best way to design an API which is presenting your
 company's data might not be to represent your current products with a
-REST interface, but rather to design the API from scratch, keeping it as
-generic as possible. If you can rebuild the backend of your systems to
-use it then all the better.
-
-
+REST interface, but rather to design the API from scratch, keeping it
+as generic as possible. If you can rebuild the backend of your systems
+to use it then all the better. Once you've built the generic
+functionality you can better gauge what aggregations, endpoints and
+data can be exposed when customers are feeding back.
