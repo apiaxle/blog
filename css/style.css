@@ -1373,3 +1373,8 @@ left: 0;
   padding:5px;
   border: 1px solid #aaa;
 }
+
+.decorative-icon-large {
+  font-size: 8em;
+  color: #ddd;
+}
