@@ -5,9 +5,9 @@ author: Phil Jackson
 description: |
 
   Every developer sets out to make their API perfect when they start
-  writing it, but, from this author's experience, it often veers as
-  requirements pour in. The following is a small checklist of things
-  that might indicate you're veering too far.
+  writing it, but, at least from this author's experience, it often
+  veers as requirements pour in. The following is a small checklist of
+  things that might indicate you're veering too far.
 
 ---
 
