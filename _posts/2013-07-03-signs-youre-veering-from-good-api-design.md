@@ -4,11 +4,10 @@ title: Signs you're veering from good API design
 author: Phil Jackson
 description: |
 
-  Being able to call your API perfect is a goal that every developer
-  sets out to achieve when they start writing it, but, from this
-  author's experience, it often veers as requirements pour in. The
-  following is a small checklist of things that might indicate you're
-  veering too far.
+  Every developer sets out to make their API perfect when they start
+  writing it, but, from this author's experience, it often veers as
+  requirements pour in. The following is a small checklist of things
+  that might indicate you're veering too far.
 
 ---
 
