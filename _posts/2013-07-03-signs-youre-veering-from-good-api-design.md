@@ -5,7 +5,7 @@ author: Phil Jackson
 description: |
 
   Being able to call your API perfect is a goal that every developer
-  sets out to achieve when then start writing it, but, from this
+  sets out to achieve when they start writing it, but, from this
   author's experience, it often veers as requirements pour in. The
   following is a small checklist of things that might indicate you're
   veering too far.
@@ -37,7 +37,7 @@ On the topic of errors...
 Using numbers to represent errors is a terrible idea (a carryover from
 the C/PHP `errno` days?). Given that there is a rich platform for
 returning data, publishers might as well take the extra step towards
-helping out the client. This is sort of thing I'm talking about:
+helping out the client. This is the sort of thing I'm talking about:
 
     "error": {
       "code": 2301,
@@ -49,7 +49,8 @@ The problems here are:
 * Maintaining the codes from the API publisher's end will be a pain.
 * This will mean developers will have to represent each of the codes
   with an enum-a-like or have their code littered with awful stuff
-  like `if error.code is 2301 then`.
+  like `if error.code is 2301 then ...`. As time passes the meaning of
+  2301 will be lost.
 * Message can't be relied upon as presumably when someone notices
   "cant" and wants to change it to "can't" there will be clients that
   break.
@@ -71,7 +72,7 @@ A better approach might be this:
 
 Type can be relied upon as the canonical name for the error and the
 message is a good human readable description. For good measure the
-http status is in the `meta` section of the response to enrich
+HTTP status is in the `meta` section of the response to enrich
 debugging. Time is helpful for debugging.
 
 [This is a very interesting idea](https://tools.ietf.org/html/draft-nottingham-http-problem-03)
@@ -80,12 +81,12 @@ for representing errors with resources.
 ## No MIME types
 
 Don't ignore MIME types, even if you're only responding with one
-representation of the data you should return the appropriate
+representation of the data, you should return the appropriate
 `content-type` header. Doing so means HTTP clients can act
-appropriately towards the payload they're receiving. For example,
+appropriately towards the payload they're receiving, for example,
 browsers often default to assuming the data is a `text/html`
 representation. The popular
 [request](https://github.com/mikeal/request) library will parse JSON
-if it gets it meaning if you don't send `content-type` two otherwise
+if it gets it, meaning if you don't send `content-type` two otherwise
 identical responses will have clients treating them completely
 differently.
