@@ -1378,3 +1378,9 @@ left: 0;
   font-size: 8em;
   color: #ddd;
 }
+
+.large-number {
+    font-size: 5em;
+    padding: 15px;
+    float: left;
+}
