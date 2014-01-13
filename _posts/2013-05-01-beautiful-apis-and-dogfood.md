@@ -14,10 +14,7 @@ description: |
 
 If you were building a large system now, it might seem contrary to
 build a service which relies on a data source without an abstraction
-<img src="/img/dog_food_treats.jpg"
-     title="Cute puppy should garner some Reddit attention"
-     alt="Puppy and dogfood"
-     style="float:right;" />
+<img src="/img/dog_food_treats.jpg" title="Cute puppy should garner some Reddit attention" alt="Puppy and dogfood" style="float:right;" />
 in the form of an API. How, if an application has been servicing
 clients for years and a decision is made to release an API, do you
 design it? What do you base requirements on? Your current interface?
