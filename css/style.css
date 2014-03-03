@@ -50,6 +50,18 @@ Here is CSS structure...
 /*----------------------------------------*/
 /*----- 1.1 General styles -----*/
 /*----------------------------------------*/
+#header .powered-by {
+    color: #ddd;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+#header .powered-by a {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 body {
 	background: #f2f2f2;
 	font-size: 14px;
